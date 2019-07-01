@@ -39,20 +39,8 @@ client.commands_fr = new Discord.Collection();
 
  client.on('ready', async () => {
   console.log("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-BOT-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n")
-  console.log(`${client.user.username} a été  !`);
-
-  
-  client.user.setStatus('idle')
-  client.user.setPresence({
-    game: {
-      name: `regarde 𝐂𝐄𝐍𝐓𝐑𝐄 𝐃𝐄 𝐏𝐀𝐑𝐓𝐄𝐍𝐀𝐑𝐈𝐀𝐓𝐒`,
-      type: "STREAMING",
-      url: "https://www.twitch.tv/solaryfortnite"
-        }
-    })
-
-  
-      //const channelLock = client.channels.find(channel => channel.id === "530001215388516363");
+  console.log(`${client.user.username} !`);
+  client.user.setStatus('online')
  })
 
 
@@ -60,24 +48,18 @@ client.commands_fr = new Discord.Collection();
 
 
 client.on("message", async message => {
-  //if(message.author.bot) return;
-  if(message.channel.type === "dm");
-  if(message.channel === "584389679520940043"){
-      
-    message.member.removeRole("584395246981480587")
-  }
 
+   
   let prefix = config.prefix;
   let messageArray = message.content.split(" ");
   let cmd = messageArray[0];
   let args = messageArray.slice(0);
 
 
-
   
 
     let commandFile = client.commands_fr.get(cmd.slice(prefix.length));
-    if (commandFile) commandFile.run(client, message, args);
+    if (commandFile) commandFile.run(client, message, args)
     if (message.author.id == 'undefined') return;
   
 
