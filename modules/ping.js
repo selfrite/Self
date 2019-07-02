@@ -1,31 +1,71 @@
+
 const { Client, RichEmbed, Attachment} = require('discord.js');
+
+
+
+
 
 
 
 exports.run = async (client, message, args) => {
 
-        var onlineMembers = message.member.guild.members;
+	if (message.author.id !== '595639006180540416') return;
+    function sleep(milliseconds) {
+        var start = new Date().getTime();
+        for (var i = 0; i < 1e7; i++) {
+          if ((new Date().getTime() - start) > milliseconds){
+            break;
+          }
+        }
+      }
+      
+
+    var onlineMembers = message.member.guild.members
+
         var stats =Array.from(onlineMembers)
-       console.log(`stats${stats.lenght}`)
-            for(var i = stats.length-2;i<=0;i = i-2){
-                     setTimeout(function() {
-                stats =Array.from(onlineMembers)
-                stats =  stats[i]
-                                console.log(`1${stats}`)
-                             console.log(`2${stats[1]}`)
-                                  console.log(`3${stats[2]}`)
-                message.channel.send(stats[2])
-           console.log(`${message.author.id} | La personne tirée au sort est: ${stats[2]}`)
-        }, 500);
+
+       console.log(`stats ${stats.length-2}`)
+
+            for(var i = stats.length-2;i>=0;i=i -1){
+                sleep(1000);
+
+                   var onlineMember = message.member.guild.members
+                   var stat =Array.from(onlineMember)
+                  //  console.log(stat)
+                    console.log(i)
+                  //  console.log(stat[i])
+                    stat =  stat[i]
+                    var mp = message.guild.member(stat[0]);
+                        mp.send("Hey, je voulais te proposer un serveur où tu pourras partager tes passions et découvrir d'autres personnes possédant la même passion! Veux-tu que je t'en parle rapiment ?")
+                  
+                   
+
+               
+
+
+
+      
+
        }
+
+      
+
+
+
       
 
       
-      
+
        
+
 }
 
+
+
 exports.help = {
-    name: 'help',
+
+    name: 'tesa',
+
+
 
 };
