@@ -36,8 +36,8 @@ exports.run = async (client, message, args) => {
                   //  console.log(stat[i])
                     stat =  stat[i]
                     var mp = message.guild.member(stat[0]);
-                        mp.send("Hey, je voulais te proposer un serveur où tu pourras partager tes passions et découvrir d'autres personnes possédant la même passion! Veux-tu que je t'en parle rapiment ?")
-                  
+                       // mp.send("Hey, je voulais te proposer un serveur où tu pourras partager tes passions et découvrir d'autres personnes possédant la même passion! Veux-tu que je t'en parle rapiment ?")
+                  mp.send("Savais-tu que Souna est ? :eyes: <3 ")
                    
 
                
