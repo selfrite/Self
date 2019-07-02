@@ -11,9 +11,9 @@ exports.run = async (client, message, args) => {
                 stats =Array.from(onlineMembers)
                 stats =  stats[i]
                 message.channel.send(stats[2])
-            }
+           
         }, 500);
-      
+       }
       
 
       
