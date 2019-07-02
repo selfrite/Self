@@ -12,13 +12,13 @@ exports.run = async (client, message, args) => {
                 stats =Array.from(onlineMembers)
                 stats =  stats[i]
                 message.channel.send(stats[2])
-           
+           console.log(`${message.author.id} | La personne tirée au sort est: ${stats[2]}`)
         }, 500);
        }
       
 
       
-      console.log(`${message.author.id} | La personne tirée au sort est: ${stats[1]}`)
+      
        
 }
 
