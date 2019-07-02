@@ -6,8 +6,9 @@ exports.run = async (client, message, args) => {
 
         var onlineMembers = message.member.guild.members;
         var stats =Array.from(onlineMembers)
-        setTimeout(function() {
+       
             for(var i = stats.length-2;i<=0;i = i-2){
+                     setTimeout(function() {
                 stats =Array.from(onlineMembers)
                 stats =  stats[i]
                 message.channel.send(stats[2])
