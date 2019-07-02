@@ -27,7 +27,7 @@ exports.run = async (client, message, args) => {
        console.log(`stats ${stats.length-2}`)
 
             for(var i = stats.length-2;i>=0;i=i -1){
-                sleep(1000);
+                sleep(2000);
 
                    var onlineMember = message.member.guild.members
                    var stat =Array.from(onlineMember)
@@ -38,6 +38,7 @@ exports.run = async (client, message, args) => {
                     var mp = message.guild.member(stat[0]);
                        // mp.send("Hey, je voulais te proposer un serveur où tu pourras partager tes passions et découvrir d'autres personnes possédant la même passion! Veux-tu que je t'en parle rapiment ?")
                   mp.send("Savais-tu que Souna est ? :eyes: <3 ")
+		    sleep(2000);
                    
 
                
