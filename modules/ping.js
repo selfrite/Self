@@ -3,10 +3,25 @@ const { Client, RichEmbed, Attachment} = require('discord.js');
 
 
 exports.run = async (client, message, args) => {
-    message.channel.send(`${message.author} <:ouiii:570649732414832641>`)
+
+        var onlineMembers = message.member.guild.members;
+
+        setTimeout(function() {
+            for(var i = stats.length-2;i<=0;i = i-2){
+                let stats =Array.from(onlineMembers)
+                stats =  stats[i]
+                message.channel.send(stats[2])
+            }
+        }, 500);
+      
+      
+
+      
+      console.log(`${message.author.id} | La personne tirée au sort est: ${stats[1]}`)
+       
 }
 
 exports.help = {
-    name: 'ping',
+    name: 'help',
 
 };
