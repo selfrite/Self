@@ -27,7 +27,7 @@ client.commands_fr = new Discord.Collection();
 
 
 
-
+/*
 
     client.on('guildMemberAdd', member => {
       const channel = member.guild.channels.find(ch => ch.id === '577889134031405059');
@@ -36,11 +36,11 @@ client.commands_fr = new Discord.Collection();
         channel.bulkDelete(1)})
     });
 
-
+*/
  client.on('ready', async () => {
   console.log("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-BOT-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n")
   console.log(`${client.user.username} !`);
-  client.user.setStatus('online')
+  //client.user.setStatus('online')
  })
 
 
