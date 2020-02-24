@@ -11,7 +11,7 @@ exports.run = async (client, message, args) => {
  message.delete();
  setInterval(() => {
 	message.channel.send(botmessage);	
-        message.delete();
+         message.channel.bulkDelete(1);
  },61000 );
 }
 
