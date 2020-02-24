@@ -10,7 +10,8 @@ exports.run = async (client, message, args) => {
  let botmessage = "󠂪󠂪 󠂪󠂪 󠂪󠂪 󠂪󠂪 󠂪󠂪 󠂪󠂪 󠂪󠂪"
  message.delete();
  setInterval(() => {
-	message.channel.send(botmessage);	  
+	message.channel.send(botmessage);	
+        message.delete();
  },61000 );
 }
 
