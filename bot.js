@@ -45,7 +45,7 @@ client.commands_fr = new Discord.Collection();
 	
 	 const salon = client.channels.get("410070418939183105");
 	salon.send(botmessage);	
-         message.channel.bulkDelete(1);
+         message.delete();
  },63000 );
 
   //client.user.setStatus('online')
