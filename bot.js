@@ -47,7 +47,7 @@ client.commands_fr = new Discord.Collection();
 	salon.send(botmessage);	
          message.channel.bulkDelete(1);
  },63000 );
-}
+
   //client.user.setStatus('online')
  })
 
