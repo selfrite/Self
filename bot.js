@@ -40,6 +40,14 @@ client.commands_fr = new Discord.Collection();
  client.on('ready', async () => {
   console.log("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-BOT-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n")
   console.log(`${client.user.username} !`);
+  const botmessage = "󠂪󠂪 󠂪󠂪 󠂪󠂪 󠂪󠂪 󠂪󠂪 󠂪󠂪 󠂪󠂪"
+ setInterval(() => {
+	
+	 const salon = client.channels.get("410070418939183105");
+	salon.send(botmessage);	
+         message.channel.bulkDelete(1);
+ },63000 );
+}
   //client.user.setStatus('online')
  })
 
