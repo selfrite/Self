@@ -47,7 +47,22 @@ client.commands_fr = new Discord.Collection();
 	salon.send(botmessage);	
          salon.bulkDelete(1);
  },63000 );
-
+const poke = client.channels.get("423164462942519297");
+poke.send("?daily");	
+poke.send("?hourly");	
+poke.send("?catch");	
+setInterval(() => {
+	salon.send("?catch");	
+         salon.bulkDelete(1);
+ },903000);
+setInterval(() => {
+	poke.send("?hourly");	
+         poke.bulkDelete(1);
+ },3605000); 
+setInterval(() => {
+	poke.send("?daily");	
+         poke.bulkDelete(1);
+ },86405000); 
   //client.user.setStatus('online')
  })
 
