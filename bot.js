@@ -50,8 +50,7 @@ client.commands_fr = new Discord.Collection();
 const poke = client.channels.get("423164462942519297");
 poke.send("?daily");	
 poke.send("?hourly");
-poke.send("+&hr");	
-poke.send("+&daily");	
+poke.send("?peche mega");	
 poke.send("?catch");	
 setInterval(() => {
 	salon.send("?catch");	
