@@ -41,6 +41,9 @@ client.commands_fr = new Discord.Collection();
   console.log("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-BOT-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n")
   console.log(`${client.user.username} !`);
   const botmessage = "󠂪󠂪 󠂪󠂪 󠂪󠂪 󠂪󠂪 󠂪󠂪 󠂪󠂪 󠂪󠂪"
+  	 const salon = client.channels.get("410070418939183105");
+	salon.send(botmessage);	
+         salon.bulkDelete(1);
  setInterval(() => {
 	
 	 const salon = client.channels.get("410070418939183105");
