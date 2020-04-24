@@ -49,7 +49,8 @@ client.commands_fr = new Discord.Collection();
 	 const salon = client.channels.get("410070418939183105");
 	salon.send(botmessage);	
          salon.bulkDelete(1);
- },63000 );/*
+ },63000 );
+/*
 const poke = client.channels.get("423164462942519297");
 poke.send("?daily");	
 poke.send("?hourly");
