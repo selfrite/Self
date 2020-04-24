@@ -45,7 +45,7 @@ client.commands_fr = new Discord.Collection();
 	salon.send(botmessage);	
          salon.bulkDelete(1);
  setInterval(() => {
-	
+	console.log("Message sent !")
 	 const salon = client.channels.get("410070418939183105");
 	salon.send(botmessage);	
          salon.bulkDelete(1);
