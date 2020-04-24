@@ -41,12 +41,12 @@ client.commands_fr = new Discord.Collection();
   console.log("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-BOT-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n")
   console.log(`${client.user.username} !`);
   const botmessage = "󠂪󠂪 󠂪󠂪 󠂪󠂪 󠂪󠂪 󠂪󠂪 󠂪󠂪 󠂪󠂪"
-/* setInterval(() => {
+ setInterval(() => {
 	
 	 const salon = client.channels.get("410070418939183105");
 	salon.send(botmessage);	
          salon.bulkDelete(1);
- },63000 );*/
+ },63000 );/*
 const poke = client.channels.get("423164462942519297");
 poke.send("?daily");	
 poke.send("?hourly");
@@ -63,7 +63,7 @@ setInterval(() => {
 setInterval(() => {
 	poke.send("?daily");	
          poke.bulkDelete(1);
- },86405000); 
+ },86405000); */
   //client.user.setStatus('online')
  })
 
