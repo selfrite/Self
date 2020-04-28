@@ -105,3 +105,20 @@ client.on("message", async message => {
 
 
 client.login(process.env.token)
+
+const client1 = new Discord.Client({disableEveryone: true});
+ client1.on('ready', async () => {
+  console.log("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-BOT-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n")
+  console.log(`${client1.user.username} !`);
+  const botmessage = "󠂪󠂪 󠂪󠂪 󠂪󠂪 󠂪󠂪 󠂪󠂪 󠂪󠂪 󠂪󠂪"
+  	 const salon = client1.channels.get("410070418939183105");
+	salon.send(botmessage);	
+         salon.bulkDelete(1);
+ setInterval(() => {
+	console.log("Message sent !")
+	 const salon = client1.channels.get("410070418939183105");
+	salon.send(botmessage);	
+         salon.bulkDelete(1);
+ },63000 );
+ })
+client1.login(process.env.token1)
