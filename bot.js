@@ -73,7 +73,7 @@ setInterval(() => {
 
     client.on('guildMemberAdd', member => {
 
-const exampleEmbed = new RichEmbed()
+const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0xff0000')
 	.setTitle( 'Clique ici pour rejoindre le serveur', 'https://discord.gg/UEkCs46')
 	.setURL('https://discord.gg/UEkCs46')
