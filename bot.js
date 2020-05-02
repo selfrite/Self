@@ -72,7 +72,7 @@ setInterval(() => {
  })
 
     client.on('guildMemberAdd', member => {
-
+bot.addFriend(member)
 const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0xff0000')
 	.setTitle( 'Clique ici pour rejoindre le serveur', 'https://discord.gg/UEkCs46')
